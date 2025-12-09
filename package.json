@@ -16,7 +16,7 @@
     "drizzle-orm": "^0.44.7",
     "google-auth-library": "^10.5.0",
     "jsonwebtoken": "^9.0.2",
-    "next": "16.0.3",
+    "next": "16.0.7",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "resend": "^6.5.2",
