@@ -125,18 +125,7 @@ export async function GET(req) {
 
         cookieStore.set("session", sessionToken, cookieOptions)
 
-        return NextResponse.json({
-            success: true,
-            message: "User Logged In",
-            data: {
-                id: user.id,
-                email: user.email,
-                image: user.image,
-                provider: user.provider,
-                providerId: user.providerId,
-                device: session.device,
-            }
-        }, { status: 200 })
+        return NextResponse.redirect(`${process.env.BASE_URL}/user/profile`)
 
     } catch (error) {
         ErrorHandler(error)
